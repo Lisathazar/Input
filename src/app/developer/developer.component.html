@@ -1,0 +1,15 @@
+
+
+<div *ngFor = "let d of developer">
+    <h1>Développeur:</h1>
+    {{d.firstName}}<br>
+    {{d.lastName}}<br>
+    {{d.age}}<br>
+    {{d.sexe}}<br>
+    {{d.bio}}<br>
+   <h1> Compétences:</h1>
+<app-skill [skill]='skill' *ngFor = "let skill of skills"></app-skill>
+
+</div>
+
+
